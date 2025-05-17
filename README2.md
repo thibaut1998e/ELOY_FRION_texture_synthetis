@@ -9,23 +9,19 @@ This project implements a texture synthesis algorithm based on the paper:
 > **Gatys, Leon A., Alexander S. Ecker, and Matthias Bethge. "Texture synthesis using convolutional neural networks." *Advances in Neural Information Processing Systems* 28 (2015).**  
 > [Link to paper](https://papers.nips.cc/paper_files/paper/2015/hash/563f0f6e5f9ecfd8ed63b7f0fdbbd009-Abstract.html)
 
-## Overview
+**What is Texture Synthesis?**
+Texture synthesis refers to the process of generating new images that replicate the visual "style" or texture of a reference image. In this implementation, we extend the idea by combining the content of one image with the style (texture) of another image, as popularized in neural style transfer. The resulting image maintains the general structure of the content image, but its texture, colors, and brushstroke-like patterns are derived from the style image.
 
-This repository demonstrates a method for synthesizing textures using deep convolutional neural networks (CNNs), specifically VGG-19. The technique leverages the feature maps from various layers of the CNN to capture and replicate the statistical characteristics of a texture image.
+**Project Description**
+This Jupyter Notebook implements the neural style transfer approach based on a pre-trained convolutional neural network (VGG-19). The goal is to optimize a new image that combines:
 
-## Method Summary
+The high-level content features of a content image.
 
-The algorithm consists of the following key steps:
+The style features captured as Gram matrices from a style image.
 
-1. **Preprocessing**: The input texture image is resized and normalized. It is then reshaped into a format compatible with the VGG-19 network.
+The optimization minimizes a loss function composed of both content and style losses.
 
-2. **Feature Extraction**: A modified version of the pretrained VGG-19 model is used to extract feature maps at multiple convolutional layers. These features capture hierarchical representations of the input texture.
 
-3. **Gram Matrix Computation**: For each selected layer, a Gram matrix is computed from the feature maps. This matrix represents the correlations between different filter responses and captures texture information independent of spatial arrangement.
-
-4. **Optimization**: A noise image is iteratively updated using gradient descent to match the Gram matrices of the original texture image. The loss function is defined as the mean squared error between the Gram matrices of the synthesized and target texture.
-
-5. **Output**: The result is a new image that visually matches the texture characteristics of the original image but is initialized from random noise.
 
 ## Requirements
 
