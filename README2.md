@@ -36,3 +36,7 @@ The optimization minimizes a loss function composed of both content and style lo
 ## Acknowledgments
 
 This work is a re-implementationof the foundational work by Gatys et al., which introduced the concept of using deep CNNs for artistic style transfer and texture generation.
+
+## Results Example 
+
+![My Image](texture_synthesis.png)
