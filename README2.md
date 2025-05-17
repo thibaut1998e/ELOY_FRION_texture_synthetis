@@ -1,5 +1,9 @@
 # Texture Synthesis Using Deep Neural Networks
 
+[link to the final presentation](https://docs.google.com/presentation/d/1oJG4EPsdERz_G8F8QaoSs0dIXxe0jEQO/edit#slide=id.gc96192608f_1_13)
+
+[link to the flipped classroom presentation](https://docs.google.com/presentation/d/1KdXVSjycCC713hYuQSqGgU3k9v8bqbg9YlSAXOjOh_A/edit)
+
 This project implements a texture synthesis algorithm based on the paper:
 
 > **Gatys, Leon A., Alexander S. Ecker, and Matthias Bethge. "Texture synthesis using convolutional neural networks." *Advances in Neural Information Processing Systems* 28 (2015).**  
@@ -40,4 +44,4 @@ Run the Jupyter notebook `texture_synthesis_gatys.ipynb` step-by-step. Make sure
 
 ## Acknowledgments
 
-This implementation is based on the foundational work by Gatys et al., which introduced the concept of using deep CNNs for artistic style transfer and texture generation.
+This work is a re-implementationof the foundational work by Gatys et al., which introduced the concept of using deep CNNs for artistic style transfer and texture generation.
