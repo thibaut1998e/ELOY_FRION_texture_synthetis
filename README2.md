@@ -31,12 +31,7 @@ The optimization minimizes a loss function composed of both content and style lo
 - Matplotlib
 - scikit-image
 - Pretrained VGG-19 weights:  
-  Download the file from: [https://web.eecs.umich.edu/~justincj/models/vgg19-d01eb7cb.pth](https://web.eecs.umich.edu/~justincj/models/vgg19-d01eb7cb.pth)  
-  and place it in the `models/` directory.
-
-## Usage
-
-Run the Jupyter notebook `texture_synthesis_gatys.ipynb` step-by-step. Make sure the VGG-19 weights are downloaded beforehand.
+  Download the file from: [https://web.eecs.umich.edu/~justincj/models/vgg19-d01eb7cb.pth](https://web.eecs.umich.edu/~justincj/models/vgg19-d01eb7cb.pth)
 
 ## Acknowledgments
 
